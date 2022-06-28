@@ -16,12 +16,12 @@
     <a href="index.html"> <img src="image/logo (1).svg" alt="Akademnashr logosi" width="227" height="60"></a>
     <nav>
       <ul>
-        <li><a href="index.html">Bosh sahifa</a></li>
-        <li><a href="#">Kitoblar</a></li>
-        <li><a href="#">Aksiyalar</a></li>
-        <li><a href="#">Kontaktlar</a></li>
+        <li><a class="sitenav-link" href="index.html">Bosh sahifa</a></li>
+        <li><a class="sitenav-link" href="#">Kitoblar</a></li>
+        <li><a class="sitenav-link" href="#">Aksiyalar</a></li>
+        <li><a class="sitenav-link" href="#">Kontaktlar</a></li>
       </ul>
-      <a href="#">Ro'yhatdan o'tish</a>
+      <a class="main-link" href="#">Ro'yhatdan o'tish</a>
     </nav>
   </header>
   <hr>
@@ -29,45 +29,49 @@
   <!-- hero -->
   <!-- ================ -->
   <main>
-    <section>
-      <div>
+    <section class="hero">
+      <div class="hero-content">
         <h1>Pythonda dasturlash
           asoslari</h1>
           <p>Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma.
             <br>  Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib,
             <br> ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.</p>
           </div>
+          <div><a class="main-link" href="#">Buyurtma berish</a></div>
+          <img src="image/image 2.jpg" alt="Pythonda dasturlash asoslari kitobi rasmi" width="510" height="510" srcset="image/image 2.jpg 1x, image/image 2@2x.jpg 2x">
         </section>
-       <img src="image/image 2.jpg" alt="Pythonda dasturlash asoslari kitobi rasmi" width="510" height="510" srcset="image/image 2.jpg 1x, image/image 2@2x.jpg 2x">
-       <div><a href="#">Buyurtma berish</a></div>
-        <hr>
-        <h2>Nega aynan
-          Akademnashr?</h2>
-          <ul>
-            <li> <img src="icons/cursor-click.svg" alt="cursor-click">
-              <h3>Oson buyurtma qilish</h3>
-              <p>Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
-            </li>
-            <li>
-               <img src="icons/sparkles.svg" alt="sparkles">
-              <h3>Eng sara kitoblar</h3>
-              <p>Trenddagi eng ommabop, turli auditoriyalarga mo'ljallangan har xil janrdagi kitoblarni topa olasiz.</p>
-            </li>
-            <li>
-              <img src="icons/lightning-bolt.svg" alt="lightning-bolt">
-              <h3>Tez yetkazib berish</h3>
-              <p>O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
-            </li>
-          </ul>
+
+        <!-- feature -->
+        <section>
           <hr>
-          <h2>Bolalar kitoblari uchun
-            ajoyib aksiya!</h2>
-            <p>Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun turli mashq qo’llanmalari va komikslar.</p>
-            <p>Aksiyadagi eng katta to’plamda
-              <strong>50 ta kitob</strong>ni
-              <b>350 min</b> so’mga (aslida 383 ming so’m) sotib olishingiz mumkin.</p>
-              <a href="#">Buyurtma berish</a>
-               <div><img src="image/sale-img.jpg" alt="kitoblar rasmi" width="440" height="440" srcset="image/sale-img.jpg 1x, image/sale-img@2x.jpg 2x"> </div>
+          <h2>Nega aynan
+            Akademnashr?</h2>
+            <ul>
+              <li> <img src="icons/cursor-click.svg" alt="cursor-click">
+                <h3>Oson buyurtma qilish</h3>
+                <p>Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
+              </li>
+              <li>
+                <img src="icons/sparkles.svg" alt="sparkles">
+                <h3>Eng sara kitoblar</h3>
+                <p>Trenddagi eng ommabop, turli auditoriyalarga mo'ljallangan har xil janrdagi kitoblarni topa olasiz.</p>
+              </li>
+              <li>
+                <img src="icons/lightning-bolt.svg" alt="lightning-bolt">
+                <h3>Tez yetkazib berish</h3>
+                <p>O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
+              </li>
+            </ul>
+            <hr>
+            <h2>Bolalar kitoblari uchun
+              ajoyib aksiya!</h2>
+              <p>Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun turli mashq qo’llanmalari va komikslar.</p>
+              <p>Aksiyadagi eng katta to’plamda
+                <strong>50 ta kitob</strong>ni
+                <b>350 min</b> so’mga (aslida 383 ming so’m) sotib olishingiz mumkin.</p>
+                <a href="#">Buyurtma berish</a>
+                <div><img src="image/sale-img.jpg" alt="kitoblar rasmi" width="440" height="440" srcset="image/sale-img.jpg 1x, image/sale-img@2x.jpg 2x"> </div>
+              </section>
 
             </main>
             <hr>
@@ -103,7 +107,7 @@
                 <li><a href="#">Ko’p so’raladigan savollar</a></li>
                 <li><a href="#">Yetkazib berish haqida</a></li>
                 <li><a href="#">To’lov usullari haqida</a></li>
-               <br>
+                <br>
                 <li><a href="#">Bo’sh ish o’rinlari</a></li>
                 <li><a href="#">Biz bilan bog’lanish</a></li>
                 <li><a href="#">Maxfiylik nizomni va</a></li>
