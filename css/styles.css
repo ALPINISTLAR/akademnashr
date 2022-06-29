@@ -22,6 +22,9 @@ background-color: white;
   color: #fff;
   text-decoration: none;
 }
+/* ================== */
+/* site-hero */
+/* =============== */
 .hero
 {
   background-color: #252420;
@@ -51,14 +54,65 @@ background-color: white;
   font-size: 40px;
   line-height: 1,2px;
   /* or 86px */
+}
 
-  letter-spacing: 0.5px;
+   .feature
+   {
+   width: 340px;
+   }
+ .feature-icon-wrapper
+ {
+width: 100px;
+height: 100px;
+background-color: rgba(255, 117, 0, 0.2);
+}
+
+  .promo
+  {
+    background-color: #000;
+  }
+  .promo-box
+  {
+   width: 373px;
+   height: 96px;
+  }
+   .promo-text-box
+   {
+    width: 440px;
+   }
+
+  .promo-head
+  {
+    font-family: Roboto Condensed;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+    color: rgba(255, 255, 255, 1);
+
+
+  }
+  .promo-parag
+  {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: rgba(255, 255, 255, 1);
+    ;
+
+  }
 .footer-line
 {
   height: 2px;
 }
-}
 ul a
 {
-  text-decoration: none;
+text-decoration: none;
+color: #000;
 }
