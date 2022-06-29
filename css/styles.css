@@ -1,6 +1,21 @@
 .site-header
 {
-background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+}
+.site-nav-list
+{
+  display: flex;
+  align-items: center;
+}
+.site-nav-actions
+{
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 .sitenav-link
 {
@@ -27,9 +42,10 @@ background-color: white;
 /* =============== */
 .hero
 {
+  display: flex;
+  justify-content: space-between;
   background-color: #252420;
   color: #fff;
-
 }
 .hero-content
 {
@@ -56,10 +72,24 @@ background-color: white;
   /* or 86px */
 }
 
+     .feature-heading-text
+     {
+      font-size: 72px;
+      width: 435px;
+      height: 172px;
+     }
+
    .feature
    {
    width: 340px;
+   list-style: none;
    }
+     .feature-line
+     {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
  .feature-icon-wrapper
  {
 width: 100px;
@@ -69,6 +99,8 @@ background-color: rgba(255, 117, 0, 0.2);
 
   .promo
   {
+    display: flex;
+    justify-content: space-between;
     background-color: #000;
   }
   .promo-box
@@ -107,12 +139,31 @@ background-color: rgba(255, 117, 0, 0.2);
     ;
 
   }
+  .site-footer-top
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   .site-fr-social-links
+   {
+    display: flex;
+    align-items: center;
+    list-style: none;
+   }
 .footer-line
 {
+  background-color: rgba(37, 36, 32, 0.5);;
   height: 2px;
+}
+.footer-links
+{
+display: flex;
+justify-content: space-around;
 }
 ul a
 {
-text-decoration: none;
-color: #000;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
 }
