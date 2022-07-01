@@ -1,5 +1,6 @@
 .site-header
 {
+  border-top: solid #FF7500 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +32,9 @@
 }
 .main-link
 {
-  padding: 12px, 24px;
+  padding: 12px 24px;
   border-radius: 4px;
+  display: inline-block;
   font-size: 13px;
   line-height: 15px;
   background: #FF7500;
@@ -51,6 +53,8 @@
 }
 .hero-content
 {
+  padding-top: 80px;
+  padding-bottom: 80px;
   width: 390px;
 
 }
@@ -62,6 +66,7 @@
 }
 .hero-img
 {
+ border-radius: 8px;
  width: 510px;
  height: 510px;
 }
@@ -93,11 +98,15 @@
       align-items: center;
      }
  .feature-icon-wrapper
- {
-width: 100px;
-height: 100px;
-background-color: rgba(255, 117, 0, 0.2);
-}
+       {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 117, 0, 0.2);
+      }
 
   .promo
   {
@@ -107,13 +116,19 @@ background-color: rgba(255, 117, 0, 0.2);
   }
   .promo-box
   {
-   width: 373px;
-   height: 96px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+   width: 440px;
+   height: 291px;
   }
    .promo-text-box
    {
     width: 440px;
    }
+
+    .promo-img  {
+      border-radius: 12px;
+    }
 
   .promo-head
   {
