@@ -1,3 +1,9 @@
+*:focus
+{
+  outline: 2px solid #FF7500;
+  outline-offset: 3px;
+}
+
 .site-header
 {
   border-top: solid #FF7500 5px;
