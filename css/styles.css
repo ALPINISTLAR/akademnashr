@@ -86,7 +86,7 @@ body
   margin-top: 0;
   margin-right: 32px;
 }
-.sitenav-link: last-child
+.sitenav-link last-child
 {
   margin-right: 0;
 }
