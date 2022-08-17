@@ -1,19 +1,37 @@
- *
- {
-  box-sizing: border-box;
+:root
+{
+--accent-color: #FF7500;
+
+--heading-font: "Roboto Condensed", Roboto, Arial, sans-serif;
+
+--text-font: "Roboto", Arial, sans-serif;
 }
-/* ===== body ====== */
+
 html
 {
   height: 100%;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
+*,
+*::before
+*::after
+{
+box-sizing: inherit;
+}
+/* ===== body ====== */
 body
 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--text-font);
+  letter-spacing: 0.5px;
 }
-
 .container
 {
   width: 100%;
@@ -23,10 +41,9 @@ body
   padding-left: 20px;
   padding-right: 20px;
 }
-
 *:focus
 {
-  outline: 2px solid #FF7500;
+  outline: 3px dotted var(--accent-color);
   outline-offset: 3px;
 }
 /* ============== */
@@ -34,9 +51,7 @@ body
 /* ============== */
 .site-header
 {
-  border-top: solid #FF7500 5px;
-  margin-left: auto;
-  margin-right: auto;
+  border-top: solid var(--accent-color) 5px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -80,7 +95,7 @@ body
 }
 .sitenav-link
 {
-  font-family: Roboto;
+  font-family: var(--text-font);
   font-size: 13px;
   font-weight: 500;
   line-height: 15px;
@@ -97,11 +112,11 @@ body
 }
 .sitenav-link:hover
 {
-  color: #FF7500;
+  color: var(--accent-color);
 }
 .sitenav-link:active
 {
-  color: #FF7500;
+  color: var(--accent-color);
   opacity: 0.6;
 }
 /* ============= */
@@ -109,13 +124,13 @@ body
 /* ========== */
 .main-link
 {
-  font-family: roboto, sans-serif;
+  font-family: var(--text-font);
   padding: 12px 24px;
   border-radius: 4px;
   display: inline-block;
   font-size: 13px;
   line-height: 15px;
-  background: #FF7500;
+  background: var(--accent-color);
   color: #fff;
   text-decoration: none;
   transition: opacity 0.4s ease;
@@ -153,7 +168,7 @@ body
   border: none;
   width: 80px;
   height: 3px;
-  background-color: #FF7500;
+  background-color: var(--accent-color);
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -168,7 +183,7 @@ body
 .hero-heading
 { padding: 0;
   margin: 0;
-  font-family: Roboto Condensed, sans-serif;
+  font-family: var(--heading-font);
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -178,7 +193,7 @@ body
 }
 .hero-text
 {
-  font-family: Roboto, sans-serif ;
+  font-family: var(--text-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -197,11 +212,11 @@ body
   padding-bottom: 210px;
   background-color: #FFFFFF;
 }
-.feature-heading-text
+.feature-heading
 {
   padding: 0;
   margin: 0;
-  font-family: Roboto Condensed, sans-serif;
+  font-family: var(--heading-font);
   font-size: 72px;
   font-weight: 700;
   line-height: 86px;
@@ -231,7 +246,7 @@ h3
 {
   padding: 0;
   margin: 0;
-  font-family: Roboto Condensed, sans-serif;
+  font-family: var(--heading-font);
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -243,7 +258,7 @@ h3
 {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: var(--text-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -296,9 +311,9 @@ h3
   border-radius: 12px;
 }
 
-.promo-head
+.promo-heading
 {
-  font-family: Roboto Condensed, sans-serif;
+  font-family: var(--heading-font);
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -309,7 +324,7 @@ h3
 }
 .promo-parag
 {
-  font-family: Roboto, sans-serif;
+  font-family: var(--text-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -320,7 +335,7 @@ h3
 }
 strong
 {
-  color: #FF7500
+  color: var(--accent-color);
 }
 /* =================  */
 /* site-footer */
@@ -355,11 +370,11 @@ strong
 }
 .site-footer-social-links a:hover
 {
-  color: #FF7500;
+  color: var(--accent-color);
 }
 .site-footer-social-links a:active
 {
-  color: #FF7500;
+  color: var(--accent-color);
   opacity: 0.6;
 }
 .footer-line
@@ -400,7 +415,7 @@ margin-right: 20px;
 }
 .site-footer-links a
 {
-  font-family: Roboto, sans-serif;
+  font-family: var(--text-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -411,10 +426,10 @@ margin-right: 20px;
 }
 .site-footer-links a:hover
 {
-  color: #FF7500;
+  color: var(--accent-color);
 }
 .site-footer-links a:active
 {
-  color: #FF7500;
+  color: var(--accent-color);
   opacity: 0.6;
 }
