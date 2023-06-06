@@ -9,17 +9,17 @@
   <!-- ================ -->
   <!-- google fonts -->
   <!-- ================ -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap"
-  rel="stylesheet">
+  rel="stylesheet"> -->
   <!-- ============= -->
   <!-- styles -->
   <!-- ============== -->
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 
 <body>
@@ -33,17 +33,23 @@
       <!-- ===================== -->
       <!-- site navigation -->
       <!-- ===================== -->
-      <div class="site-nav-list">
+      <div class="sitenav-list">
         <nav>
-          <ul class="site-nav-actions">
-            <li><a class="sitenav-link" href="index.html">Bosh sahifa</a></li>
-            <li><a class="sitenav-link" href="#">Kitoblar</a></li>
-            <li><a class="sitenav-link" href="#">Aksiyalar</a></li>
-            <li><a class="sitenav-link" href="#">Kontaktlar</a></li>
+          <ul class="sitenav-actions">
+            <li class="sitenav-item"><a class="sitenav-link" href="index.html">Bosh sahifa</a></li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Kitoblar</a></li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Aksiyalar</a></li>
+            <li class="sitenav-item"><a class="sitenav-link" href="#">Kontaktlar</a></li>
           </ul>
         </nav>
         <a class="main-link" href="#">Ro'yhatdan o'tish</a>
       </div>
+      <button class="sitenav-opener"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="3" fill="currentColor"/>
+        <rect y="9" width="24" height="3" fill="currentColor"/>
+        <rect y="18" width="24" height="3" fill="currentColor"/>
+        </svg>
+        </button>
     </div>
 
   </header>
@@ -78,7 +84,7 @@
           <hr class="hero-line">
           <h2 class="feature-heading">Nega aynan <br>
             Akademnashr?</h2>
-            <ul class="feature-line">
+            <ul class="feature-list">
               <li class="feature">
                 <div class="feature-icon-wrapper"><img src="icons/cursor-click.svg" alt="cursor-click" width="56" height="56">
                 </div>
@@ -185,6 +191,6 @@
               </div>
             </div>
           </footer>
+          <script src="js/main.js"></script>
         </body>
-
         </html>
